@@ -1,5 +1,5 @@
 generator client {
-  provider = "prisma-client"
+  provider = "prisma-client-ts"
   output   = "../src/database/generated"
 }
 
@@ -29,7 +29,7 @@ model Users {
   name      String
   email     String   @unique
   password  String
-  role      enumRole
+  role      enumRole @default(member)
   createAt  DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("updated_at")
 
@@ -72,8 +72,8 @@ model Tasks {
   id          String       @id @default(uuid())
   title       String
   description String?
-  status      statusTask
-  priority    priorityTask
+  status      statusTask   @default(pending)
+  priority    priorityTask @default(low)
 
   user       Users  @relation(fields: [assignedTo], references: [id])
   assignedTo String @map("assigned_to")
@@ -101,7 +101,7 @@ model TaskHistory {
 
   newStatus statusTask @map("new_status")
 
-  changedAt DateTime @default(now())
+  changedAt DateTime @default(now()) @map("changed_at")
 
   @@map("task_history")
 }

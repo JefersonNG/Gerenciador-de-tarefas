@@ -8,9 +8,9 @@
  *
  * 🟢 You can import this file directly.
  */
-export type * from './models/Users.ts'
-export type * from './models/Teams.ts'
-export type * from './models/TeamMembers.ts'
-export type * from './models/Tasks.ts'
-export type * from './models/TaskHistory.ts'
-export type * from './commonInputTypes.ts'
+export type * from './models/Users'
+export type * from './models/Teams'
+export type * from './models/TeamMembers'
+export type * from './models/Tasks'
+export type * from './models/TaskHistory'
+export type * from './commonInputTypes'

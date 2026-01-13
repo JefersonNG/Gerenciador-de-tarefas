@@ -9,8 +9,8 @@
  * 🟢 You can import this file directly.
  */
 import type * as runtime from "@prisma/client/runtime/client"
-import type * as $Enums from "../enums.ts"
-import type * as Prisma from "../internal/prismaNamespace.ts"
+import type * as $Enums from "../enums"
+import type * as Prisma from "../internal/prismaNamespace"
 
 /**
  * Model Users
@@ -263,7 +263,7 @@ export type UsersCreateInput = {
   name: string
   email: string
   password: string
-  role: $Enums.enumRole
+  role?: $Enums.enumRole
   createAt?: Date | string
   updatedAt?: Date | string
   teamMembers?: Prisma.TeamMembersCreateNestedManyWithoutUserInput
@@ -276,7 +276,7 @@ export type UsersUncheckedCreateInput = {
   name: string
   email: string
   password: string
-  role: $Enums.enumRole
+  role?: $Enums.enumRole
   createAt?: Date | string
   updatedAt?: Date | string
   teamMembers?: Prisma.TeamMembersUncheckedCreateNestedManyWithoutUserInput
@@ -315,7 +315,7 @@ export type UsersCreateManyInput = {
   name: string
   email: string
   password: string
-  role: $Enums.enumRole
+  role?: $Enums.enumRole
   createAt?: Date | string
   updatedAt?: Date | string
 }
@@ -434,7 +434,7 @@ export type UsersCreateWithoutTeamMembersInput = {
   name: string
   email: string
   password: string
-  role: $Enums.enumRole
+  role?: $Enums.enumRole
   createAt?: Date | string
   updatedAt?: Date | string
   tasks?: Prisma.TasksCreateNestedManyWithoutUserInput
@@ -446,7 +446,7 @@ export type UsersUncheckedCreateWithoutTeamMembersInput = {
   name: string
   email: string
   password: string
-  role: $Enums.enumRole
+  role?: $Enums.enumRole
   createAt?: Date | string
   updatedAt?: Date | string
   tasks?: Prisma.TasksUncheckedCreateNestedManyWithoutUserInput
@@ -498,7 +498,7 @@ export type UsersCreateWithoutTasksInput = {
   name: string
   email: string
   password: string
-  role: $Enums.enumRole
+  role?: $Enums.enumRole
   createAt?: Date | string
   updatedAt?: Date | string
   teamMembers?: Prisma.TeamMembersCreateNestedManyWithoutUserInput
@@ -510,7 +510,7 @@ export type UsersUncheckedCreateWithoutTasksInput = {
   name: string
   email: string
   password: string
-  role: $Enums.enumRole
+  role?: $Enums.enumRole
   createAt?: Date | string
   updatedAt?: Date | string
   teamMembers?: Prisma.TeamMembersUncheckedCreateNestedManyWithoutUserInput
@@ -562,7 +562,7 @@ export type UsersCreateWithoutTaskHistoriesInput = {
   name: string
   email: string
   password: string
-  role: $Enums.enumRole
+  role?: $Enums.enumRole
   createAt?: Date | string
   updatedAt?: Date | string
   teamMembers?: Prisma.TeamMembersCreateNestedManyWithoutUserInput
@@ -574,7 +574,7 @@ export type UsersUncheckedCreateWithoutTaskHistoriesInput = {
   name: string
   email: string
   password: string
-  role: $Enums.enumRole
+  role?: $Enums.enumRole
   createAt?: Date | string
   updatedAt?: Date | string
   teamMembers?: Prisma.TeamMembersUncheckedCreateNestedManyWithoutUserInput

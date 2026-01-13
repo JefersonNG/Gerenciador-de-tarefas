@@ -9,8 +9,8 @@
  * 🟢 You can import this file directly.
  */
 import type * as runtime from "@prisma/client/runtime/client"
-import type * as $Enums from "../enums.ts"
-import type * as Prisma from "../internal/prismaNamespace.ts"
+import type * as $Enums from "../enums"
+import type * as Prisma from "../internal/prismaNamespace"
 
 /**
  * Model Tasks
@@ -322,8 +322,8 @@ export type TasksCreateInput = {
   id?: string
   title: string
   description?: string | null
-  status: $Enums.statusTask
-  priority: $Enums.priorityTask
+  status?: $Enums.statusTask
+  priority?: $Enums.priorityTask
   createAt?: Date | string
   updatedAt?: Date | string
   user: Prisma.UsersCreateNestedOneWithoutTasksInput
@@ -335,8 +335,8 @@ export type TasksUncheckedCreateInput = {
   id?: string
   title: string
   description?: string | null
-  status: $Enums.statusTask
-  priority: $Enums.priorityTask
+  status?: $Enums.statusTask
+  priority?: $Enums.priorityTask
   assignedTo: string
   teamId: number
   createAt?: Date | string
@@ -374,8 +374,8 @@ export type TasksCreateManyInput = {
   id?: string
   title: string
   description?: string | null
-  status: $Enums.statusTask
-  priority: $Enums.priorityTask
+  status?: $Enums.statusTask
+  priority?: $Enums.priorityTask
   assignedTo: string
   teamId: number
   createAt?: Date | string
@@ -573,8 +573,8 @@ export type TasksCreateWithoutUserInput = {
   id?: string
   title: string
   description?: string | null
-  status: $Enums.statusTask
-  priority: $Enums.priorityTask
+  status?: $Enums.statusTask
+  priority?: $Enums.priorityTask
   createAt?: Date | string
   updatedAt?: Date | string
   team: Prisma.TeamsCreateNestedOneWithoutTasksInput
@@ -585,8 +585,8 @@ export type TasksUncheckedCreateWithoutUserInput = {
   id?: string
   title: string
   description?: string | null
-  status: $Enums.statusTask
-  priority: $Enums.priorityTask
+  status?: $Enums.statusTask
+  priority?: $Enums.priorityTask
   teamId: number
   createAt?: Date | string
   updatedAt?: Date | string
@@ -638,8 +638,8 @@ export type TasksCreateWithoutTeamInput = {
   id?: string
   title: string
   description?: string | null
-  status: $Enums.statusTask
-  priority: $Enums.priorityTask
+  status?: $Enums.statusTask
+  priority?: $Enums.priorityTask
   createAt?: Date | string
   updatedAt?: Date | string
   user: Prisma.UsersCreateNestedOneWithoutTasksInput
@@ -650,8 +650,8 @@ export type TasksUncheckedCreateWithoutTeamInput = {
   id?: string
   title: string
   description?: string | null
-  status: $Enums.statusTask
-  priority: $Enums.priorityTask
+  status?: $Enums.statusTask
+  priority?: $Enums.priorityTask
   assignedTo: string
   createAt?: Date | string
   updatedAt?: Date | string
@@ -688,8 +688,8 @@ export type TasksCreateWithoutTaskHistoriesInput = {
   id?: string
   title: string
   description?: string | null
-  status: $Enums.statusTask
-  priority: $Enums.priorityTask
+  status?: $Enums.statusTask
+  priority?: $Enums.priorityTask
   createAt?: Date | string
   updatedAt?: Date | string
   user: Prisma.UsersCreateNestedOneWithoutTasksInput
@@ -700,8 +700,8 @@ export type TasksUncheckedCreateWithoutTaskHistoriesInput = {
   id?: string
   title: string
   description?: string | null
-  status: $Enums.statusTask
-  priority: $Enums.priorityTask
+  status?: $Enums.statusTask
+  priority?: $Enums.priorityTask
   assignedTo: string
   teamId: number
   createAt?: Date | string
@@ -752,8 +752,8 @@ export type TasksCreateManyUserInput = {
   id?: string
   title: string
   description?: string | null
-  status: $Enums.statusTask
-  priority: $Enums.priorityTask
+  status?: $Enums.statusTask
+  priority?: $Enums.priorityTask
   teamId: number
   createAt?: Date | string
   updatedAt?: Date | string
@@ -798,8 +798,8 @@ export type TasksCreateManyTeamInput = {
   id?: string
   title: string
   description?: string | null
-  status: $Enums.statusTask
-  priority: $Enums.priorityTask
+  status?: $Enums.statusTask
+  priority?: $Enums.priorityTask
   assignedTo: string
   createAt?: Date | string
   updatedAt?: Date | string
